@@ -27,12 +27,9 @@ public class Banco {
         Scanner entrada= new Scanner (System.in);
         //se muestra el menu
         do{
-        System.out.println("Banco DAS");  
-        System.out.println("Menu");
-        System.out.println("Menu");
-        System.out.println("Menu");
-        System.out.println("Menu");
-        System.out.println("Menu");
+        System.out.println("+++++++++++++++++++++"); 
+        System.out.println("+++++Banco DAS+++++++");  
+        System.out.println("+++++++++++++++++++++"); 
         System.out.println("Menu");
         System.out.println("0. Salir");
         System.out.println("1. Consultar");
@@ -68,6 +65,7 @@ public class Banco {
                 //Aqui termina el caso 2
             case 3:
                 //Retirar saldo
+                System.out.println("Ingrese la cantidad a retirar:");
                 double retiro = entrada.nextDouble();
              
                if (saldo_cliente>=retiro){
@@ -75,7 +73,7 @@ public class Banco {
                    
                }else{
                    System.out.println("No es posible retirar");
-                   
+                   System.out.println("Saldo insuficiente");
                }
                 //Realiza la accion
                 break;
